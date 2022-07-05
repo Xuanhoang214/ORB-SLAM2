@@ -22,7 +22,9 @@
 #define FRAME_H
 
 #include<vector>
-
+#include <opencv2/opencv.hpp>
+#include <opencv2/core.hpp>
+#include <cstddef>
 #include "MapPoint.h"
 #include "Thirdparty/DBoW2/DBoW2/BowVector.h"
 #include "Thirdparty/DBoW2/DBoW2/FeatureVector.h"
@@ -30,7 +32,7 @@
 #include "KeyFrame.h"
 #include "ORBextractor.h"
 
-#include <opencv2/opencv.hpp>
+namespace ORB_SLAM2 { class ORBextractor; }
 
 namespace ORB_SLAM2
 {

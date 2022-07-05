@@ -20,14 +20,14 @@
 
 #ifndef LOCALMAPPING_H
 #define LOCALMAPPING_H
-
+#include <opencv2/core.hpp>
+#include <mutex>
+#include <list>
 #include "KeyFrame.h"
 #include "Map.h"
 #include "LoopClosing.h"
 #include "Tracking.h"
 #include "KeyFrameDatabase.h"
-
-#include <mutex>
 
 
 namespace ORB_SLAM2
@@ -36,6 +36,8 @@ namespace ORB_SLAM2
 class Tracking;
 class LoopClosing;
 class Map;
+class KeyFrame;
+class MapPoint;
 
 class LocalMapping
 {
